@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Mauu 💗</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="fx"></canvas>
+
+<div class="container">
+
+  <!-- SECTION 1 -->
+  <section class="card">
+    <p class="text">
+      <strong>Heyyy Mauu 💗</strong><br><br>
+      I made something new…<br>
+      I hope avdel tula 😭<br><br>
+      Just scroll slowlyy
+    </p>
+    <div class="petal" onclick="nextSection(1)"></div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="card">
+    <p class="text">
+      5 years of friendship 🧿<br>
+      3 years of relationship 💗<br><br>
+      Every meet, every moment felt special 🫂
+    </p>
+    <div class="petal" onclick="nextSection(2)"></div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="card">
+    <p class="text">
+      It started from your proposal 😂💗<br><br>
+      I promise…<br>
+      you won’t regret this 🥹❤️
+    </p>
+    <div class="petal" onclick="nextSection(3)"></div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="card center">
+    <p class="big">WILL YOU BE MY VALENTINE? 💗</p>
+
+    <div class="choice">
+      <button class="yes" onclick="startYes()">Yes</button>
+      <button class="no" onclick="softNo()">No</button>
+    </div>
+
+    <p id="noText" class="soft hidden">
+      That’s okay… I just wanted you to know how I feel 🤍
+    </p>
+  </section>
+
+  <!-- GIFTS -->
+  <section id="gifts" class="card hidden">
+    <p class="text">Choose a surprise 🎁</p>
+    <div class="gift-row">
+      <div class="gift" onclick="giftFlowers()">🌸</div>
+      <div class="gift" onclick="giftChoco()">🍫</div>
+      <div class="gift" onclick="giftCar()">🚗</div>
+    </div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
